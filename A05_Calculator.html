@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易計算機</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            width: 50vw;
+            height: 30vh;
+            padding: 10px 10px;
+        }
+
+        .calculator {
+            background-color: blue;
+            width: 250px;
+            height: 300px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .result {
+            width: 90%;
+            height: 50px;
+            background-color: lightyellow;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
+        .btn-all {
+            background-color: yellow;
+            height: 200px;
+            width: 90%;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:10px;
+ 
+        }
+        .btn {
+            background-color: cyan;
+            width: 32px;
+            height: 32px;
+            border-radius: 5px;
+            border: 2px solid black;
+            line-height: 25px;
+            font-weight: bolder;
+            font-size: 18px;
+            color: blue;
+            text-align: center;
+        }
+        .func {
+            background-color: cyan;
+            color:red;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="result"></div>
+        <div class="btn-all">
+            <div class="btn" id="btn_07">7</div>
+            <div class="btn" id="btn_08">8</div>
+            <div class="btn" id="btn_09">9</div>
+            <div class="func btn" id="btn_add">+</div>
+            <div class="btn" id="btn_04">4</div>
+            <div class="btn" id="btn_05">5</div>
+            <div class="btn" id="btn_06">6</div>
+            <div class="func btn" id="btn_sub">-</div>
+            <div class="btn" id="btn_01">1</div>
+            <div class="btn" id="btn_02">2</div>
+            <div class="btn" id="btn_03">3</div>
+            <div class="func btn" id="btn_mul">×</div>
+            <div class="func btn" id="btn_pec">%</div>
+            <div class="btn" id="btn_00">0</div>
+            <div class="func btn" id="btn_equ" >=</div>
+            <div class="func btn" id="btn_div">÷</div>
+        </div>
+    </div>
+</body>
+
+</html>

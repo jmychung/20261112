@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜拳遊戲</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            width: 60vw;
+            height: 30vh;
+            padding: 10px 10px;
+        }
+
+        .container {
+            background-color: blue;
+            width: 400px;
+            height: 360px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .result {
+            width: 40%;
+            height: 120px;
+            background-color: greenyellow;
+            margin-top: 10px;
+            margin:auto;
+            border-radius: 5px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .btn-all {
+            background-color: yellow;
+            height: 190px;
+            width: 90%;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:10px;
+ 
+        }
+        .btn {
+            width: 90px;
+            height: 100px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        .func {
+            background-color: magenta;
+            color:white;
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
+            border: 2px solid black;
+            font-weight: bolder;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        #btn_A {
+            background-image: url(./img/A02.jpg);
+            background-size: cover;
+        }
+        #btn_B {
+            background-image: url(./img/A03.jpg);
+            background-size: cover;
+        }
+        #btn_C {
+            background-image: url(./img/A01.jpg);
+            background-size: cover;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="result" id="myself">我方</div>
+        <div class="result" id="you">對方</div>
+        <div class="btn-all">
+            <div class="btn" id="btn_A"></div>
+            <div class="btn" id="btn_B"></div>
+            <div class="btn" id="btn_C"></div>
+            <div class="func" id="btn_guess">猜拳</div>           
+        </div>
+    </div>
+</body>
+
+</html>
